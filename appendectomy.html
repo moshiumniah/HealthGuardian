@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appendectomy Surgery</title>
+  <link rel="stylesheet" href="surgery-tasks.css">
+  <script defer src="appendectomy.js"></script>
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li> <!-- Links to the Home Page -->
+    <li><a href="surgery-options.html">Surgery Options</a></li> <!-- Example link to surgery options -->
+  </ul>
+</nav>
+<body>
+  <div class="container">
+    <h1>Appendectomy Surgery</h1>
+    
+    <!-- Timer Section -->
+    <div class="timer-container">
+      <label for="time-input">Set Timer (in minutes):</label>
+      <input type="number" id="time-input" placeholder="Enter minutes">
+      <button id="start-timer">Start Timer</button>
+      <button id="pause-timer">Pause Timer</button>
+      <p id="timer-display">Timer: 00:00</p>
+    </div>
+
+    <!-- Surgery Task Cards -->
+    <h2>Surgery Checklist</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Count Instruments Before Surgery</h3>
+        <p>Ensure that all surgical instruments are counted before starting the surgery.</p>
+        <label for="notif-time-1">Set Notification Time (in minutes):</label>
+        <input type="number" class="notif-time" id="notif-time-1" placeholder="Enter minutes">
+        <button class="set-notif-btn">Set Notification</button>
+        <button class="complete-btn">Mark as Complete</button>
+        <p class="notif-status">Notification: None</p>
+      </div>
+
+      <div class="card">
+        <h3>Verify Patient Identity</h3>
+        <p>Double-check the patient's identity and the procedure to prevent mistakes.</p>
+        <label for="notif-time-2">Set Notification Time (in minutes):</label>
+        <input type="number" class="notif-time" id="notif-time-2" placeholder="Enter minutes">
+        <button class="set-notif-btn">Set Notification</button>
+        <button class="complete-btn">Mark as Complete</button>
+        <p class="notif-status">Notification: None</p>
+      </div>
+
+      <div class="card">
+        <h3>Position Patient Correctly</h3>
+        <p>Ensure that the patient is positioned properly on the operating table.</p>
+        <label for="notif-time-3">Set Notification Time (in minutes):</label>
+        <input type="number" class="notif-time" id="notif-time-3" placeholder="Enter minutes">
+        <button class="set-notif-btn">Set Notification</button>
+        <button class="complete-btn">Mark as Complete</button>
+        <p class="notif-status">Notification: None</p>
+      </div>
+
+      <div class="card">
+        <h3>Count Instruments After Surgery</h3>
+        <p>Recount all instruments after surgery to prevent any from being left inside the patient.</p>
+        <label for="notif-time-4">Set Notification Time (in minutes):</label>
+        <input type="number" class="notif-time" id="notif-time-4" placeholder="Enter minutes">
+        <button class="set-notif-btn">Set Notification</button>
+        <button class="complete-btn">Mark as Complete</button>
+        <p class="notif-status">Notification: None</p>
+      </div>
+
+      <div class="card">
+        <h3>Check for Bleeding</h3>
+        <p>Before closing, ensure there is no excessive bleeding.</p>
+        <label for="notif-time-5">Set Notification Time (in minutes):</label>
+        <input type="number" class="notif-time" id="notif-time-5" placeholder="Enter minutes">
+        <button class="set-notif-btn">Set Notification</button>
+        <button class="complete-btn">Mark as Complete</button>
+        <p class="notif-status">Notification: None</p>
+      </div>
+    </div>
+
+    <!-- Notification Container for Pop-up Style -->
+    <div id="notification-popup" class="notification-popup hidden">
+      <p id="notification-message"></p>
+    </div>
+
+  </div>
+</body>
+</html>

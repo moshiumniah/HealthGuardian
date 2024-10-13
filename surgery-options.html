@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Surgeries</title>
+  <link rel="stylesheet" href="surgery-options.css">
+  <script defer src="surgery-options.js"></script>
+</head>
+<nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li> <!-- Links to the Home Page -->
+      <li><a href="surgery-options.html">Surgery Options</a></li> <!-- Example link to surgery options -->
+    </ul>
+  </nav>
+<body>
+  <div class="container">
+    <h1>Available Surgeries</h1>
+    <div id="greeting"></div>
+    <div class="card-container">
+      <div class="card">
+        <h2>Cardiac Surgery</h2>
+        <p>Specialized surgery involving the heart and blood vessels.</p>
+      </div>
+      <div class="card">
+        <h2>Orthopedic Surgery</h2>
+        <p>Procedures related to the musculoskeletal system.</p>
+      </div>
+      <div class="card">
+        <h2>Neurosurgery</h2>
+        <p>Surgery involving the brain, spinal cord, and peripheral nerves.</p>
+      </div>
+      <div class="card">
+        <h2>Plastic Surgery</h2>
+        <p>Reconstructive surgery or cosmetic enhancement procedures.</p>
+      </div>
+        <!-- New Abdominal Surgery Card -->
+        <div class="card" onclick="window.location.href='abdominal-surgery.html'">
+            <h2>Abdominal Surgery</h2>
+            <p>Surgeries related to the abdomen and digestive organs.</p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
